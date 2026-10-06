@@ -1,0 +1,20 @@
+// Clear a stray hardware breakpoint (left by Ozone) at main, then reset and run.
+si SWD
+device STM32F427II
+speed 1000
+connect
+w4 0xE0002008 0
+w4 0xE000200C 0
+w4 0xE0002010 0
+r
+g
+Sleep 2000
+h
+regs
+mem32 0xE0002008 1
+mem32 0x20003CCC 2
+mem32 0x20000478 1
+mem8 0x20000474 2
+mem8 0x200000DC 1
+g
+exit

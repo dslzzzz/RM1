@@ -1,0 +1,13 @@
+// Diagnostic: try several SWD speeds and report what the target answers.
+// No flash write, no option byte change.
+si SWD
+device STM32F407IG
+speed 4000
+connect
+speed 1000
+connect
+speed 200
+connect
+speed 100
+connect
+exit

@@ -1,0 +1,10 @@
+// Flash the velocity-only demo build (kVelOnly).
+si SWD
+speed 4000
+device STM32F427II
+connect
+w4 0xE0002008 0
+loadfile "build\demo_vel.hex"
+r
+g
+exit

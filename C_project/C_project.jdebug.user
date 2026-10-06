@@ -1,0 +1,29 @@
+
+GraphedExpression="g_dbgRef", Color=#a00909
+GraphedExpression="g_dbgFdb", Color=#09a01b
+GraphedExpression="g_dbgOut", Color=#09a087
+GraphedExpression="g_dbgState", DisplayFormat=DISPLAY_FORMAT_DEC, Color=#0984a0
+GraphedExpression="g_dbgWdCount", DisplayFormat=DISPLAY_FORMAT_DEC, Color=#0964a0
+GraphedExpression="g_dbgVelDiff", Color=#094fa0
+GraphedExpression="g_dbgVelEst", Color=#0940a0
+GraphedExpression="g_dbgVelFilt", Color=#0934a0
+GraphedExpression="g_dbgCur", Color=#092ca0
+OpenDocument="Ozone_DataSampling_261006.csv", FilePath="D:/rmoz/Ozone_DataSampling_261006.csv", Line=0
+OpenDocument="stm32f4xx_it.c", FilePath="D:/rmoz/C_project/Core/Src/stm32f4xx_it.c", Line=86
+OpenDocument="Gm6020.cpp", FilePath="D:/rmoz/C_project/Tasks/Gm6020.cpp", Line=36
+OpenDocument="main.c", FilePath="D:/rmoz/C_project/Core/Src/main.c", Line=62
+OpenToolbar="Debug", Floating=0, x=0, y=0
+OpenWindow="Registers 1", DockArea=RIGHT, x=0, y=1, w=300, h=691, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, FilteredItems=[], RefreshRate=1
+OpenWindow="Disassembly", DockArea=RIGHT, x=0, y=0, w=300, h=299, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Memory 1", DockArea=BOTTOM, x=3, y=0, w=192, h=585, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, EditorAddress=0x0
+OpenWindow="Functions", DockArea=LEFT, x=0, y=0, w=300, h=991, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Data Sampling", DockArea=BOTTOM, x=0, y=0, w=552, h=585, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, VisibleTab=0, UniformSampleSpacing=0
+OpenWindow="Timeline", DockArea=BOTTOM, x=1, y=0, w=1995, h=585, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=1, DataPaneShown=1, PowerPaneShown=0, CodePaneShown=0, PinCursor="Cursor Movable", TimePerDiv="1 s / Div", TimeStampFormat="Time", DataGraphDrawAsPoints=0, DataGraphLegendShown=1, DataGraphUniformSampleSpacing=0, DataGraphLegendPosition="1702;0", PowerGraphDrawAsPoints=0, PowerGraphLegendShown=0, PowerGraphAvgFilterTime=Off, PowerGraphAvgFilterLen=Off, PowerGraphUniformSampleSpacing=0, PowerGraphLegendPosition="1712;352", CodeGraphLegendShown=0, CodeGraphLegendPosition="1719;0"
+OpenWindow="Console", DockArea=BOTTOM, x=2, y=0, w=138, h=585, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+TableHeader="Functions", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Address";"Size";"#Insts";"Source"], ColWidths=[911;131;100;116;344]
+TableHeader="Power Sampling", SortCol="Index", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Ch 0"], ColWidths=[100;100;100]
+TableHeader="Registers 1", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Description"], ColWidths=[103;183;399]
+TableHeader="RegisterSelectionDialog", SortCol="None", SortOrder="ASCENDING", VisibleCols=[], ColWidths=[]
+TableHeader="TargetExceptionDialog", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Address";"Description"], ColWidths=[200;100;100;320]
+TableHeader="Data Sampling Table", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";" g_dbgRef";" g_dbgFdb";" g_dbgOut";" g_dbgState";" g_dbgWdCount";" g_dbgVelDiff";" g_dbgVelEst";" g_dbgVelFilt";" g_dbgCur"], ColWidths=[100;100;100;100;100;100;100;100;100;100;100]
+TableHeader="Data Sampling Setup", SortCol="Type", SortOrder="ASCENDING", VisibleCols=["Expression";"Type";"Value";"Min";"Max";"Average";"# Changes";"Min. Change";"Max. Change"], ColWidths=[160;300;170;157;144;209;149;183;171]

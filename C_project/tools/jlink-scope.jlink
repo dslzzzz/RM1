@@ -1,0 +1,8 @@
+si SWD
+device STM32F427II
+speed 4000
+connect
+mem32 0x20000474 1
+mem32 0x2000247C 1
+savebin "C:\Users\Lenovo\Documents\Codex\2026-09-27\gm6020-https-blog-csdn-net-m0\work\scope.bin" 0x2000047C 8192
+exit

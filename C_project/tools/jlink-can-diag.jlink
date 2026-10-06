@@ -1,0 +1,17 @@
+si SWD
+device STM32F427II
+speed 4000
+connect
+mem32 0x40006400 8
+mem32 0x20003CCC 2
+Sleep 300
+mem32 0x20003CCC 2
+Sleep 300
+mem32 0x20003CCC 2
+Sleep 300
+mem32 0x20003CCC 2
+Sleep 300
+mem32 0x20003CCC 2
+mem8 0x20000474 2
+mem8 0x200000DC 1
+exit

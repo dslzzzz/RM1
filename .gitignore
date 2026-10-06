@@ -1,0 +1,17 @@
+# Build output (CMake / Make / STM32CubeIDE)
+build/
+Debug/
+Release/
+*.o
+*.a
+*.elf
+*.bin
+*.hex
+*.map
+*.su
+
+# Editor / OS junk
+*.swp
+Thumbs.db
+Desktop.ini
+.DS_Store

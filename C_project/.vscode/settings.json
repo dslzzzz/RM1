@@ -1,0 +1,25 @@
+{
+  // ==== 直接用工程自带的 CMakePresets.json，不再弹窗询问 ====
+  "cmake.useCMakePresets": "always",
+
+  // ==== 把配置/编译预设钉死成 Debug ====
+  // 打开这个文件夹后，按 Ctrl+Shift+B 就能直接编译，不用再手动选预设
+  "cmake.configurePreset": "Debug",
+  "cmake.buildPreset": "Debug",
+
+  // 打开工程时自动配置一次（相当于帮你跑一遍 cmake --preset Debug）
+  "cmake.configureOnOpen": true,
+
+  // ==== IntelliSense：使用 CMake 生成的编译数据库 ====
+  // 有了它，跳转定义、补全、错误提示才认得 HAL 和工程里的头文件
+  "C_Cpp.default.compileCommands": "${workspaceFolder}/build/Debug/compile_commands.json",
+
+  // Gm6020.h / Pid.h 里是 C++ 的 class，按 C++ 解析更准
+  "files.associations": {
+    "*.h": "cpp"
+  },
+
+  // 工程路径含中文，固定用 UTF-8，避免中文注释乱码
+  "files.encoding": "utf8",
+  "files.autoGuessEncoding": false
+}

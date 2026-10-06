@@ -1,0 +1,10 @@
+// J-Link connection check: verify probe/target communication. No flash write.
+si SWD
+speed 4000
+device STM32F407IG
+connect
+// Read DBGMCU_IDCODE: STM32F407 device ID is 0x413
+mem32 0xE0042000 1
+// Read the first 16 bytes of flash (check whether a program is present)
+mem32 0x08000000 4
+exit

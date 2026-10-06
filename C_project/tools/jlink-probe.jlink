@@ -1,0 +1,9 @@
+si SWD
+device Cortex-M4
+speed 1000
+connect
+mem32 0x40007800 1
+mem32 0x40007804 1
+mem32 0x40016800 1
+mem32 0x40015800 1
+exit

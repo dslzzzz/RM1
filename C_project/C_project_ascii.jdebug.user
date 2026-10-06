@@ -1,0 +1,27 @@
+
+GraphedExpression="g_dbgRef", Color=#a00909
+GraphedExpression="g_dbgFdb", Color=#09a01b
+OpenDocument="main.c", FilePath="D:/rmoz/C_project/Core/Src/main.c", Line=147
+OpenDocument="stm32f4xx_hal_can.c", FilePath="D:/rmoz/C_project/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c", Line=1216
+OpenToolbar="Debug", Floating=0, x=0, y=0
+OpenWindow="Registers 1", DockArea=RIGHT, x=0, y=1, w=464, h=888, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, FilteredItems=[], RefreshRate=1
+OpenWindow="Disassembly", DockArea=RIGHT, x=0, y=0, w=464, h=281, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Memory 1", DockArea=BOTTOM, x=3, y=0, w=821, h=406, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, EditorAddress=0x0
+OpenWindow="Watched Data 1", DockArea=LEFT, x=0, y=0, w=753, h=715, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Functions", DockArea=LEFT, x=0, y=1, w=753, h=454, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Data Sampling", DockArea=BOTTOM, x=0, y=0, w=502, h=406, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, VisibleTab=0, UniformSampleSpacing=0
+OpenWindow="Timeline", DockArea=BOTTOM, x=1, y=0, w=1416, h=406, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=1, DataPaneShown=1, PowerPaneShown=1, CodePaneShown=1, PinCursor="Cursor Movable", TimePerDiv="5 s / Div", TimeStampFormat="Time", DataGraphDrawAsPoints=0, DataGraphLegendShown=1, DataGraphUniformSampleSpacing=0, DataGraphLegendPosition="1162;-119", PowerGraphDrawAsPoints=0, PowerGraphLegendShown=1, PowerGraphAvgFilterTime=Off, PowerGraphAvgFilterLen=Off, PowerGraphUniformSampleSpacing=0, PowerGraphLegendPosition="1134;-91", CodeGraphLegendShown=1, CodeGraphLegendPosition="1141;0"
+OpenWindow="Console", DockArea=BOTTOM, x=2, y=0, w=138, h=406, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+TableHeader="Functions", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Address";"Size";"#Insts";"Source"], ColWidths=[911;131;100;116;344]
+TableHeader="Data Sampling Table", SortCol="Index", SortOrder="ASCENDING", VisibleCols=["Index";"Time";" g_dbgRef";" g_dbgFdb"], ColWidths=[100;100;100;100]
+TableHeader="Data Sampling Setup", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Type";"Value";"Min";"Max";"Average";"# Changes";"Min. Change";"Max. Change"], ColWidths=[160;196;105;100;100;127;149;171;171]
+TableHeader="Power Sampling", SortCol="Index", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Ch 0"], ColWidths=[100;100;100]
+TableHeader="Registers 1", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Description"], ColWidths=[103;183;267]
+TableHeader="Watched Data 1", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Value";"Location";"Refresh"], ColWidths=[134;100;112;407]
+TableHeader="RegisterSelectionDialog", SortCol="None", SortOrder="ASCENDING", VisibleCols=[], ColWidths=[]
+WatchedExpression="g_dbgState", RefreshRate=1, Window=Watched Data 1
+WatchedExpression="g_dbgRef", RefreshRate=1, Window=Watched Data 1
+WatchedExpression="g_dbgFdb", RefreshRate=1, Window=Watched Data 1
+WatchedExpression="g_dbgFault", RefreshRate=1, Window=Watched Data 1
+WatchedExpression="g_dbgWdCount", RefreshRate=1, Window=Watched Data 1
+WatchedExpression="g_reset_by_iwdg", RefreshRate=1, Window=Watched Data 1

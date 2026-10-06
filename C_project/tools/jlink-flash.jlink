@@ -1,0 +1,13 @@
+// Flash and run: write the compiled elf into flash, then reset and go.
+// Target MCU on this board is STM32F427II (DEV_ID 0x419, 2048 KB flash),
+// even though the CubeMX project was generated for STM32F407IG.
+// Usage: double click tools\flash.cmd, or run from the project root:
+//        JLink.exe -NoGui 1 -ExitOnError 1 -CommanderScript tools\jlink-flash.jlink
+si SWD
+speed 4000
+device STM32F427II
+connect
+loadfile "build\C_project.elf"
+r
+g
+exit

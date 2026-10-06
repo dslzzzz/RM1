@@ -1,0 +1,26 @@
+/*********************************************************************
+*  C_project_ascii.jdebug  --  Ozone project for the GM6020 assignment
+*
+*  Why this file exists:
+*    Ozone V3.26 (2021) crashes when any path it touches contains
+*    non-ASCII characters. The real project lives in a folder with a
+*    Chinese name, so this project file lives in an ASCII folder that
+*    is a directory junction to the real project:
+*        D:\rmoz\C_project   ->   D:\Embedded\RM\<chinese>\C_project
+*    Open THIS file in Ozone. Everything it touches is ASCII.
+*
+*  Debug aids already in the firmware:
+*    - IWDG is frozen while the CPU is halted by the debugger
+*    - g_dbg*  : live values (ref / fdb / out / state / fault / wd count)
+*    - g_scope*: 512-sample ring buffer of the control loop (1 kHz)
+**********************************************************************
+*/
+void OnProjectLoad (void) {
+  Project.SetDevice ("STM32F427II");          // measured: DEV_ID 0x419, 2048 KB flash
+  Project.SetHostIF ("USB", "");
+  Project.SetTargetIF ("SWD");
+  Project.SetTIFSpeed ("4 MHz");
+  Project.AddSvdFile ("$(InstallDir)/Config/CPU/Cortex-M4.svd");
+  Project.AddSvdFile ("$(InstallDir)/Config/Peripherals/STM32F407IG.svd");
+  File.Open ("D:/rmoz/C_project/build/C_project.elf");
+}

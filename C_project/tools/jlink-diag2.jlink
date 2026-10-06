@@ -1,0 +1,9 @@
+// Generic-core diagnostic: bypass the STM32F4 specific init script and talk to the
+// raw Cortex-M4 debug port. If this also fails, the physical SWD link is the problem.
+si SWD
+device Cortex-M4
+speed 1000
+connect
+speed 50
+connect
+exit

@@ -1,0 +1,19 @@
+// The CPU is halted at main by a stray breakpoint: the IWDG reset flag has not
+// been latched into g_reset_by_iwdg yet. Clear it, resume, then read the flag.
+si SWD
+device STM32F427II
+speed 4000
+connect
+mem32 0xE0002008 1
+mem32 0xE000EDF0 1
+mem8 0x200000DC 1
+w4 0xE0002008 0
+g
+Sleep 1500
+h
+mem32 0x20003CCC 2
+mem8 0x200000DC 1
+mem8 0x20000474 2
+mem32 0xE000ED28 5
+g
+exit

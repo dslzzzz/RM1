@@ -1,0 +1,9 @@
+si SWD
+device STM32F427II
+speed 1000
+connect
+mem32 0xE0002000 2
+mem32 0xE0002008 6
+mem32 0xE000EDF0 1
+mem32 0xE000ED28 5
+exit

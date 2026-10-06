@@ -1,0 +1,11 @@
+// Flash the production build. Clears a stray hardware breakpoint first,
+// because Ozone leaves one at main which would stop the CPU right after reset.
+si SWD
+speed 4000
+device STM32F427II
+connect
+w4 0xE0002008 0
+loadfile "build\C_project.elf"
+r
+g
+exit

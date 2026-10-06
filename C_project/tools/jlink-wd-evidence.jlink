@@ -1,0 +1,33 @@
+// Watchdog evidence run: make the firmware believe CAN feedback stopped,
+// by disabling the CAN1 RX FIFO0 pending interrupt (CAN1_IER @ 0x40006414, FMPIE0).
+// The rest is untouched: same code path as a physically pulled CAN cable.
+si SWD
+device STM32F427II
+speed 4000
+connect
+mem32 0x40006414 1
+mem32 0x20003CCC 1
+mem8 0x20000474 2
+mem8 0x200000DC 1
+Sleep 200
+mem32 0x20003CCC 1
+w4 0x40006414 0
+Sleep 150
+mem32 0x20003CCC 1
+mem8 0x20000474 2
+Sleep 250
+mem32 0x20003CCC 1
+mem8 0x20000474 2
+Sleep 300
+mem32 0x20003CCC 1
+mem8 0x20000474 2
+Sleep 400
+mem32 0x20003CCC 1
+mem8 0x20000474 2
+mem8 0x200000DC 1
+Sleep 600
+mem32 0x20003CCC 1
+mem8 0x20000474 2
+mem8 0x200000DC 1
+exit
+

@@ -1,0 +1,7 @@
+si SWD
+device STM32F427II
+speed 1000
+connect
+h
+regs
+exit

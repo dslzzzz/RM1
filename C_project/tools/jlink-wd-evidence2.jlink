@@ -1,0 +1,36 @@
+// Watchdog evidence run, take 2: longer tail so we catch the post-reset boot.
+si SWD
+device STM32F427II
+speed 4000
+connect
+mem32 0x40006414 1
+mem32 0x20003CCC 1
+mem8 0x20000474 2
+mem8 0x200000DC 1
+Sleep 200
+mem32 0x20003CCC 1
+w4 0x40006414 0
+Sleep 150
+mem32 0x20003CCC 1
+mem8 0x20000474 2
+Sleep 300
+mem32 0x20003CCC 1
+mem8 0x20000474 2
+Sleep 400
+mem32 0x20003CCC 1
+mem8 0x20000474 2
+Sleep 500
+mem32 0x20003CCC 1
+mem8 0x20000474 2
+mem8 0x200000DC 1
+Sleep 500
+mem32 0x20003CCC 1
+mem8 0x200000DC 1
+Sleep 500
+mem32 0x20003CCC 1
+mem8 0x200000DC 1
+Sleep 500
+mem32 0x20003CCC 1
+mem8 0x200000DC 1
+mem8 0x20000474 2
+exit

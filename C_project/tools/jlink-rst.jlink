@@ -1,0 +1,6 @@
+// Single connect attempt (used by the "hold RESET" test loop)
+si SWD
+speed 1000
+device STM32F407IG
+connect
+exit
